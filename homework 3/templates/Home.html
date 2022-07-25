@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <h1>Home Page</h1>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/two.css') }}">
+
+</head>
+
+<body>
+    <form action="" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"></input>
+        <br />
+        <label for="grade">Grade: </label>
+        <input type="number" min="1" max="100" name="grade" />
+        <input type="submit" style="display: none" />
+    </form>
+    <a href="stds">List All students</a>
+    <br />
+    <a href="greater">Grade greater Than 85</a>
+    <br />
+    <br />
+    <h3>Delete Student</h3>
+    <form action="/delete" method="post">
+        <input type="text" name="del"></input>
+        <input type="submit" style="display: none" />
+    </form>
+    <br />
+    <br />
+
+    <h3>Update Student</h3>
+    <form action="/update" method="post">
+        <label for="id">Student ID:</label>
+
+        <input type="text" name="st_id" id="id"></input>
+        <br />
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name"></input>
+        <br />
+        <label for="grade">Grade:</label>
+        <input type="number" min="1" max="100" name="grade" id="grade" />
+        <br />
+        <input type="submit" style="display: none" />
+    </form>
+</body>
+
+</html>

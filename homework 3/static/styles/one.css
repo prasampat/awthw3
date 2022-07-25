@@ -1,0 +1,9 @@
+table {
+    border: 1px dotted rgb(126, 121, 121);
+}
+
+td {
+    margin: 9px;
+    border: 2px dotted black;
+
+}

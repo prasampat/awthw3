@@ -1,0 +1,10 @@
+html {
+    background-color: rgb(146, 192, 231);
+}
+
+a {
+    text-decoration: none;
+    background-color: rgb(246, 194, 99);
+    margin: 12px;
+    padding: 2px;
+}
